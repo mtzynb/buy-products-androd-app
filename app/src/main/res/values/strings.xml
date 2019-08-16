@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Super Market</string>
+    <!-- for sign up fragment !-->
+    <string name="name_text_view">Name:</string>
+    <string name="familyname_text_view">Family name:</string>
+    <string name="username_text_view">Username:</string>
+    <string name="password_text_view">Password:</string>
+    <string name="repassword_text_view">Re_password:</string>
+    <string name="city_text_view">City:</string>
+    <string name="phone_text_view">Phone:</string>
+    <string name="email_text_view">Email:</string>
+
+    <string name="name_hint">ur name</string>
+    <string name="familyname_hint">ur familyname</string>
+    <string name="username_hint">ur username</string>
+    <string name="password_hint">enter ur pass</string>
+    <string name="re_password_hint">re_enter pass</string>
+    <string name="city_hint">ur city</string>
+    <string name="phone_hint">09121234567</string>
+    <string name="email_hint">example@gmail.com</string>
+    <string name="sign_up_btn">Sign up</string>
+
+    <!--for log in fragment-->
+    <string name="login_btn">Log in</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--my spinner in add product activity-->
+    <string name="spinner_title">Choose a category</string>
+    <string-array name="product_arrays">
+        <item>Choose a category</item>
+        <item>Electronics, Computers and Office</item>
+        <item>Books and Audible</item>
+        <item>Food and Grocery</item>
+        <item>Clothing, Shoes and Jewerly</item>
+    </string-array>
+
+    <string name="product_name_text_view">Product name</string>
+    <string name="product_price_text_view">Product price</string>
+    <string name="hint_product_name">Enter product name</string>
+    <string name="hint_product_price">Enter product price </string>
+    <string name="capture_photo_btn">Capture Photo</string>
+    <string name="save_product_btn">save product</string>
+
+
+</resources>

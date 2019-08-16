@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapp.finalproject.fragments.customerFragments.DialogForFinalShoppingFragment"
+    android:background="@color/my_app_theme"
+    android:padding="20dp">
+
+
+
+
+    <TextView
+        android:id="@+id/tvAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are u sure to buy these stuff?? "
+        android:textColor="#000C3B"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <EditText
+        android:id="@+id/etQuantity"
+        android:hint="Enter Quantity "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000C3B"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:inputType="number"
+        android:layout_below="@id/tvAlert"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YES"
+        android:layout_below="@id/etQuantity"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/my_buttons_background"
+        android:textColor="#F8F9F7"
+        />
+
+
+    <Button
+        android:id="@+id/btnNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnYes"
+        android:layout_toRightOf="@+id/btnYes"
+        android:layout_marginLeft="30dp"
+        android:text="NO"
+        android:background="@drawable/my_buttons_background"
+        android:textColor="#F8F9F7"/>
+
+
+</RelativeLayout>

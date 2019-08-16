@@ -1,0 +1,121 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_app_theme">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        tools:context="com.example.myapp.finalproject.fragments.SignUpFragment">
+
+        <TextView
+            android:id="@+id/tvErrors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="#c90606"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/productsSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:entries="@array/product_arrays"
+            android:prompt="@string/spinner_title"
+            android:padding="15dp"
+            android:layout_below="@+id/tvErrors"
+            />
+
+        <TextView
+            android:layout_below="@+id/productsSpinner"
+            android:id="@+id/tvProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_name_text_view"
+            android:textSize="15sp" android:layout_marginTop="30dp"
+            />
+
+        <EditText
+            android:id="@+id/etProductName"
+            android:layout_below="@+id/productsSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvProductName"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/tvProductName"
+            android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+            android:hint="@string/hint_product_name"
+            android:inputType="text"
+            android:padding="15dp" />
+
+
+        <TextView
+            android:id="@+id/tvProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvProductName"
+            android:layout_marginTop="30dp"
+            android:text="@string/product_price_text_view"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvProductPrice"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/tvProductPrice"
+            android:digits="1234567890"
+            android:hint="@string/hint_product_price"
+            android:inputType="number"
+            android:padding="15dp" />
+
+
+        <ImageView
+            android:id="@+id/imageViewProduct"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tvProductPrice"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:id="@+id/btnCapturePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/capture_photo_btn"
+            android:layout_below="@+id/imageViewProduct"
+            android:drawableLeft="@drawable/ic_add_a_photo_black_24dp"
+            android:drawableStart="@drawable/ic_add_a_photo_black_24dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:onClick="capturePhoto_onClick"
+            />
+
+        <Button
+            android:id="@+id/btnSaveProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_product_btn"
+            android:layout_below="@id/btnCapturePhoto"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/my_buttons_background"
+            android:onClick="saveProduct_onClick"/>
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

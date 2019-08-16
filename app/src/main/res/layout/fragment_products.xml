@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_app_theme"
+    tools:context="com.example.myapp.finalproject.fragments.customerFragments.ProductsFragment">
+
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/productsSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:entries="@array/product_arrays"
+        android:padding="15dp"
+        android:prompt="@string/spinner_title" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productsSpinner"
+        android:layout_centerInParent="true"
+        android:textColor="#FD0223"
+        android:textSize="20dp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStatus" />
+
+
+</RelativeLayout>

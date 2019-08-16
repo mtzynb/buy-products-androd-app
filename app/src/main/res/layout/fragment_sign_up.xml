@@ -1,0 +1,225 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_app_theme">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        tools:context="com.example.myapp.finalproject.fragments.SignUpFragment">
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_text_view"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvName"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/tvName"
+            android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="@string/name_hint"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+
+        <TextView
+            android:id="@+id/tvFamilyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_marginTop="15dp"
+            android:text="@string/familyname_text_view"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etFamliyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvFamilyName"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/tvFamilyName"
+            android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="@string/familyname_hint"
+            android:inputType="text"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFamilyName"
+            android:layout_marginTop="15dp"
+            android:text="@string/username_text_view"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvUsername"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/tvUsername"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_."
+            android:hint="@string/username_hint"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvUsername"
+            android:layout_marginTop="15dp"
+            android:text="@string/password_text_view"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvPassword"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/tvPassword"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!1234567890-.@#$%^*()_+/\|,"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:padding="15dp" />
+
+
+        <TextView
+            android:id="@+id/tvRePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPassword"
+            android:layout_marginTop="15dp"
+            android:text="@string/repassword_text_view"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etRePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvRePassword"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/tvRePassword"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!1234567890-.@#$%^*()_+/\|,"
+            android:hint="@string/re_password_hint"
+            android:inputType="textPassword"
+            android:padding="15dp" />
+
+        <TextView
+
+            android:id="@+id/tvCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvRePassword"
+            android:layout_marginTop="15dp"
+            android:text="@string/city_text_view"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvCity"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/tvCity"
+            android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="@string/city_hint"
+            android:inputType="text"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCity"
+            android:layout_marginTop="15dp"
+            android:text="@string/phone_text_view"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvPhone"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/tvPhone"
+            android:hint="@string/phone_hint"
+            android:inputType="phone"
+            android:digits="0123456789"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPhone"
+            android:layout_marginTop="15dp"
+            android:text="@string/email_text_view"
+            android:textSize="20sp" />
+
+        <EditText
+
+            android:id="@+id/etEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvEmail"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/tvEmail"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@._0123456789"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:padding="15dp" />
+
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvEmail"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/my_buttons_background"
+            android:text="@string/sign_up_btn"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/tvErrors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signUpBtn"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:textColor="#c90606"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</ScrollView>
